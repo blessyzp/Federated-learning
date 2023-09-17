@@ -1,4 +1,4 @@
-#why we have the need for fedarated learning#
+# why we have the need for fedarated learning
 
 **1.the privacy**
 In many applications, dataset may conclude some sensitive information. Such as self information and self-medical information.
@@ -9,9 +9,9 @@ Transformation for cross-border may be constricted by policies.
 **3.the effiency**
 To deal with big datasets, it may be not a good option to collect them up in one server. Since calculate locally can save up resources and time.
 
-#classes of fedarated learning#
+# classes of fedarated learning
 
-##classified by types of data##
+## classified by types of data
 
 **1.Horizontal Federated Learning(HFL)**
 Same features but different id.
@@ -25,6 +25,6 @@ For examples, one hospital owns the body information for a person, while school 
 By pre-training on a large dataset, we get a fundamental model, which will be sent to several local clients to be trained again.
 To a certain extent, FTL aims to combine federated learning and transfer learning.
 
-##classified by types of experience##
+## classified by types of experience
 
 **
