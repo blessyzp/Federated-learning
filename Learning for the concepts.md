@@ -76,9 +76,20 @@ The main function of server is to initialize the model, distribute it to clients
 Local trainings generate changes of weight, which clients upload to the server. It can be an actual change or an increment of the weight.   
 For examples, the weight of client A is updated from w=5 to w=6, client will upload this *+1* to server.  
 
-  Besides the weight of model, clients may also update other parameters like learning rate, batches of training. 
+  Besides the weight of model, clients may also update other parameters like learning rate, batches of training.   
+
+ *the specific content:*    
+ 
+ (1)model parameters:weights and biases, model structure(numbers of layers of the neutral network, the number of nodes per layer)  
+ (2)training metadata:learning rate, optimizer state(moving averages of gradients), batch size, training loss and accuracy.  
 
 **4.2 clinets to clients**
-During some non-center fedarated learning, clients may need to communicate with other clients directly to exchange new weights or run collaborative training.
+During some non-center fedarated learning, clients may need to communicate with other clients directly to exchange new weights or run collaborative training.  
+
+*the specific content:*    
+
+ (1)model parameters    
+ (2)training metadata:learning rate, optimizer state(moving averages of gradients), batch size, training loss and accuracy.    
+(3)synchronizing and corrdinating information. **In a decentralized environment, additional information may be required between clients to synchronize and coordinate their training activities. For example, they may need to exchange information to determine when to start and end training passes, or how to incorporate model updates.**
 
 
